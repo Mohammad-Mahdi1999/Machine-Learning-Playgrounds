@@ -1,0 +1,144 @@
+\documentclass{report}
+\usepackage{graphicx}
+\usepackage{xepersian}
+\settextfont{XB Zar.ttf} 
+\usepackage{bidi}
+\graphicspath{{/Transformers/Images}} % Change the path
+\begin{document}
+	\begin{titlepage}
+		
+		\centering
+		\vspace*{2cm}
+		\textbf{\LARGE صفحه وب برای دسترسی سریع به Playground ها}
+		\vspace{1cm}
+		
+		
+		
+		\vfill
+		\textbf{استاد: دکتر میرسامان تاجبخش}
+		
+		
+		\textbf{محمد مهدی فرح بخش}
+		 
+		\vspace{1cm}
+		\today
+	\end{titlepage}
+	
+	\begin{center}
+		\textbf{
+		بسم اللﱣه الرحمن الرحیم
+		}
+	\end{center}
+	
+	\section{مقدمه}
+در یک صفحه وب به شش شبیه ساز انواع الگوریتم های ماشین لرنینگ دسترسی داشته باشید.
+	
+	\section{نیازمندی ها و نصب}
+	\begin{enumerate}
+		\item 
+		دستورات زیر را در دایرکتوری
+		 \lr{Neual Network Tensorflow playground}
+		اجرا کنید:
+		\begin{itemize}
+			\item \lr{`npm i`} : 
+			برای نصب نیازمندی ها 
+			\item \lr{`npm run build`} : 
+			برای کامپایل
+		\end{itemize}
+		
+		\item 
+		برنامه
+		\lr{app.py}
+		در دایرکتوری 
+		\lr{SVM-Visualizer-Web-App}
+		بایستی در پسزمینه در حال اجرا باشد و همچنین نیازمندی ها نصب شده باشند.
+		\begin{itemize}
+			\item \lr{`pip install -r requirement.txt`} : 
+			برای نصب نیازمندی ها 
+			\item \lr{`py app.py`} : 
+			برای اجرا
+		\end{itemize}
+		
+	\end{enumerate}
+	
+
+	\section{بخش های برنامه}
+	\begin{itemize}
+		\item Decision Tree
+		
+		شما باید بتوانید با استفاده از الگوریتم
+		\lr{Decision Tree}
+		قارچ های سمی را از خوراکی تفکیک کنید. با انتخاب رئوس مختلف entropy و gini محاسبه شده حاصل از انتخاب رأس را خواهید دید. با هر بار Refresh صفحه با داده های جدید روبرو خواهید شد.
+
+			\begin{figure}
+				\centering
+				\includegraphics[width=0.5\textwidth]{Decision-Tree.png}
+				\caption{نمایی از
+					\lr{Decision Tree}
+					}
+				\label{fig:Decision-Tree}
+			\end{figure}
+			
+		\item k-means
+		با کلیک بر روی صفحه داده سمپل ایچاد کنید و از نوار بالا پارامتر های الگوریتم k-means را تنظیم کرده و دکمه Run را بزنید.
+				\begin{figure}
+					\centering
+					\includegraphics[width=0.5\textwidth]{k-means.png}
+					\caption{نمایی از
+						\lr{k-means}
+					}
+					\label{fig:k-means}
+				\end{figure}
+		\item GNN
+		در این بخش قدم در دنیای شبکه های عصبی گرافی بگذارید و با برخی مفاهیم آن آشنا شوید.
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=0.5\textwidth]{GNN.png}
+			\caption{نمایی از
+				\lr{GNN}
+			}
+			\label{fig:GNN}
+		\end{figure}
+		\item KNN
+		
+		در کنسول زاویه دوربین و داده ها را دستکاری کنید و در محیط سه بعدی اتفاقات را مشاهده نمایید.
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{KNN.png}
+			\caption{نمایی از
+				\lr{KNN}
+			}
+			\label{fig:KNN}
+		\end{figure}
+		
+		\item SVM
+		
+		ابتدا نوع مسئله (خطی یا غیر خطی) را انتخاب نموده و با تغییر پارامتر ها اثر هر یک را ببینید. با هر بار رفرش داده ها تغییر می کنند. 
+		
+			\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{SVM.png}
+			\caption{نمایی از
+				\lr{SVM}
+			}
+			\label{fig:SVM}
+		\end{figure}
+		
+		\item \lr{Neural Network TensorFlow playground}
+		
+		یک شبکه عصبی در اختیار شماست. لایه اضافه کنید هایپر پارامتر ها را تغییر دهید تا به کمترین خطا دست پیدا کنید. 
+		
+		\begin{figure}
+			\centering
+			\includegraphics[width=0.5\textwidth]{Neural-Network.png}
+			\caption{نمایی از
+				\lr{Neural Network}
+			}
+			\label{fig:Neural-Network}
+		\end{figure}
+	\end{itemize}
+	
+
+	\bibliography{mybib}
+	
+\end{document}
